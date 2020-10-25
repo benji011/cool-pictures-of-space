@@ -1,6 +1,6 @@
 # Cool pictures of space
 
-<img src="./public/solar-system.png"/>
+<img width="200px" src="./public/solar-system.png"/>
 
 NASA has a ["picture of the day"](https://apod.nasa.gov/apod/astropix.html) webpage. But the problem is to view the image up close you need to click the image to open a new window/tab.
 
