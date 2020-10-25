@@ -31,6 +31,9 @@ function App() {
       .get("https://api.nasa.gov/planetary/apod?", {
         params: { date: podDate, api_key: process.env.REACT_APP_API_KEY },
       })
+      .error((err) => {
+        console.log(err)
+      })
       .then((response) => {
         setPod(response.data);
         setLoading(false);
