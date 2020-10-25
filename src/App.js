@@ -35,7 +35,7 @@ function App() {
         setPod(response.data);
         setLoading(false);
       });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (isLoading) {
@@ -80,8 +80,13 @@ function App() {
         </a>
       </main>
       <footer className="App-footer">
-        ※ Disclaimer: I don't own these imagses. Also, full HD might take a
-        while to load.
+        <p>
+          ※ Disclaimer: I don't own these imagses. Also, full HD might take a
+          while to load.{" "}
+        </p>
+        <a href="https://github.com/benji011/" target="_blank" rel="noreferrer">
+          Created & open sourced by Benji011
+        </a>
       </footer>
     </div>
   );

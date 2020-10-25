@@ -37,6 +37,21 @@ html {
   text-decoration: underline;
 }
 
+.App-footer > p {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.App-footer > a {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
 .App-link {
   color: #61dafb;
 }
