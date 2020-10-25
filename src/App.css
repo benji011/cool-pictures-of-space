@@ -14,12 +14,13 @@ html {
   align-items: center;
   justify-content: right;
   display: flex;
+  flex-flow: row wrap;
   align-items: stretch;
 }
 
 .pod-description {
   width: 400px;
-  font-size: 18px;
+  font-size: 14px;
   margin: 20px;
 }
 
