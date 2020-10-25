@@ -66,7 +66,7 @@ function App() {
             Sourced from NASA
           </a>
         </div>
-        <a href="https://github.com/you">
+        <a href="https://github.com/benji011/cool-pictures-of-space">
           <img
             loading="lazy"
             width="149"

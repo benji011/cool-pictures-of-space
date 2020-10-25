@@ -7,7 +7,7 @@ My version takes this step away by letting you view it up close by simply hoveri
 This app uses the NASA API so in order to run it locally you need to generate your own API key.
 
 ## Demo
-[cool-pictures-of-space]
+[cool-pictures-of-space](cool-pictures-of-space.netlify.app)
 
 ## Installation
 
