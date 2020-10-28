@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SideBySideMagnifier } from "react-image-magnifiers";
 import GitHubForkRibbon from 'react-github-fork-ribbon';
-import "./App.css";
+import "./styles/App.css";
 import axios from "axios";
 
 const podNasaUrl = "https://apod.nasa.gov/apod/astropix.html";
@@ -68,7 +68,7 @@ function App() {
       </main>
       <footer className="App-footer">
         <p>
-          ※ Disclaimer: I don't own these imagses. Also, full HD might take a
+          ※ Disclaimer: I don't own these images. Also, full HD might take a
           while to load.{" "}
         </p>
         <a href="https://github.com/benji011/" target="_blank" rel="noreferrer">
