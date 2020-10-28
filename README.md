@@ -1,6 +1,6 @@
 # Cool pictures of space
 
-<img width="200px" src="./public/solar-system.png"/>
+<img width="200px" src="./public/solar-system.png" alt="logo"/>
 
 NASA has a ["picture of the day"](https://apod.nasa.gov/apod/astropix.html) webpage. But the problem is to view the image up close you need to click the image to open a new window/tab.
 
@@ -16,19 +16,21 @@ This app uses the NASA API so in order to run it locally you need to generate yo
 ```bash
 git clone https://github.com/benji011/cool-pictures-of-space
 cd cool-pictures-of-space
+mv .env.example .env.development.local
 yarn add
 ```
 
 ## Add your own API key
 
-Step 1: Go to the [NASA API webpage](https://api.nasa.gov/) and click "Generate API Key".
+Step 1: Go to the [NASA API webpage](https://api.nasa.gov/) and Generate API Key by filling up your details
 
 Step 2. Open `.env.development.local` and then replace `yourapikey` with the key you just obtained.
 
 ```bash
 REACT_APP_API_KEY=yourapikey
 ```
-Step 3. Run the project with
+
+Step 3. Run the project with:
 
 ```bash
 yarn start
