@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { SideBySideMagnifier } from "react-image-magnifiers";
+import GitHubForkRibbon from 'react-github-fork-ribbon';
 import "./App.css";
 import axios from "axios";
 
@@ -7,18 +8,7 @@ const podNasaUrl = "https://apod.nasa.gov/apod/astropix.html";
 
 function getDate() {
   const today = new Date();
-  today.setDate(today.getDate() - 1);
-
-  let dd = today.getDate();
-  let mm = today.getMonth() + 1;
-  let yyyy = today.getFullYear();
-  if (dd < 10) {
-    dd = "0" + dd;
-  }
-  if (mm < 10) {
-    mm = "0" + mm;
-  }
-  return yyyy + "-" + mm + "-" + dd;
+  return today.toISOString().substring(0, 10);
 }
 
 function App() {
@@ -63,24 +53,18 @@ function App() {
         />
         <div className="pod-description">
           <h2>
-            {pod.copyright} {" - "} {pod.title}
+            {pod.copyright ? `${pod.copyright} - ` : ""} {pod.title}
           </h2>
           <p>{pod.explanation}</p>
           <a href={podNasaUrl} target="_blank" rel="noreferrer">
             Sourced from NASA
           </a>
         </div>
-        <a href="https://github.com/benji011/cool-pictures-of-space">
-          <img
-            loading="lazy"
-            width="149"
-            height="149"
-            src="https://github.blog/wp-content/uploads/2008/12/forkme_right_white_ffffff.png?resize=149%2C149"
-            className="attachment-full size-full"
-            alt="Fork me on GitHub"
-            data-recalc-dims="1"
-          />
-        </a>
+        <GitHubForkRibbon href="https://github.com/benji011/cool-pictures-of-space"
+                          target="_blank"
+                          position="right">
+          Fork me on GitHub
+        </GitHubForkRibbon>
       </main>
       <footer className="App-footer">
         <p>
