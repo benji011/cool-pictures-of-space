@@ -8,6 +8,7 @@ const podNasaUrl = "https://apod.nasa.gov/apod/astropix.html";
 
 function getDate() {
   const today = new Date();
+  today.setDate(today.getDate() - 1);
   return today.toISOString().substring(0, 10);
 }
 
