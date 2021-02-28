@@ -1,9 +1,8 @@
-# Cool pictures of space
-
 <p align="center">
-    <img width="480" height="480" src="./public/solar-system.png" alt="logo"/>
+    <img width="280" height="280" src="./public/solar-system.png" alt="logo"/>
 </p>
 
+# About
 NASA has a ["picture of the day"](https://apod.nasa.gov/apod/astropix.html) webpage. But the problem is to view the image up close you need to click the image to open a new window/tab.
 
 My version takes this step away by letting you view it up close by simply hovering over the image.
